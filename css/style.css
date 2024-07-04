@@ -1,0 +1,410 @@
+:root {
+    --main-color: #2B6435;
+    --bg-color: #C2E4D3;
+    --secound-bg-color: #9FC6B3;
+    --text-color: #2B6435;
+    --secound-text-color: #F0F8F2;
+    --another-color: rgb(243, 35, 132);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* ----------------Header Section -------------------------------- */
+header {
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--secound-text-color);
+    backdrop-filter: blur(10px);
+}
+
+header .logo {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 800 !important;
+}
+
+.fa-snowflake {
+    color: var(--another-color);
+}
+
+.nav_icons_right a,
+.nav_icons_left a {
+    text-decoration: none;
+    font-size: 23px;
+    color: var(--main-color) !important;
+}
+
+.nav_icons_right a:hover,
+.nav_icons_left a:hover {
+    color: var(--another-color) !important;
+}
+
+.nav-link {
+    border-radius: 40px;
+    color: var(--text-color) !important;
+
+}
+
+.nav-link:hover {
+    background-color: var(--main-color);
+    color: var(--secound-text-color) !important;
+}
+
+.fa-bars {
+    font-size: 24px !important;
+    color: var(--text-color);
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* ----------------Main Section -------------------------------- */
+#home_section {
+    background-color: var(--bg-color) !important;
+}
+
+.main_title {
+    color: var(--text-color);
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.3;
+    pointer-events: none;
+}
+
+.main_info {
+    color: var(--text-color);
+    pointer-events: none;
+}
+
+.main_btn {
+    background-color: var(--main-color) !important;
+    color: var(--secound-text-color) !important;
+}
+
+/* ----------------About Section -------------------------------- */
+.about_page {
+    background-color: var(--secound-text-color);
+}
+
+.row {
+    --bs-gutter-x: none !important;
+}
+
+.about_head {
+    color: var(--text-color);
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.about_info {
+    color: var(--text-color);
+    pointer-events: none;
+}
+
+/* ----------------Product Section -------------------------------- */
+#product_page {
+    background-color: var(--bg-color);
+}
+
+.Product_title {
+    font-weight: 700;
+    pointer-events: none;
+}
+
+.row {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.card {
+    box-shadow: 0 0 5px 0px #000000;
+    border-radius: 35px !important;
+    border: none !important;
+    width: 20rem !important;
+}
+
+.card-top {
+    height: 300px;
+    border-radius: 35px 35px 0 35px !important;
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+
+.card_heart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    border-radius: 0 35px 0 35px !important;
+    color: var(--main-color);
+    background-color: var(--secound-text-color);
+    cursor: pointer;
+}
+
+.card-top img {
+    height: 100% !important;
+    object-fit: contain !important;
+}
+
+.card-title {
+    font-size: 20px !important;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.prices>p {
+    margin-bottom: 0 !important;
+    pointer-events: none;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.old_price {
+    font-size: 14px;
+}
+
+.fa-share-nodes {
+    padding: 10px;
+    background-color: var(--main-color);
+    color: var(--secound-text-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buy {
+    color: var(--text-color) !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.card-btn {
+    background-color: var(--main-color) !important;
+    color: var(--secound-text-color) !important;
+    border-radius: 35px 0 35px 0 !important;
+}
+
+/* ----------------contact Section -------------------------------- */
+#contact_page {
+    background-color: var(--secound-text-color) !important;
+}
+
+.contact_title {
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.contact_main {
+    background-color: var(--bg-color);
+    border-radius: 10px !important;
+    box-shadow: 0 0 5px 0px var(--main-color);
+    padding: 0px 30px !important;
+    border: 1px solid var(--main-color);
+}
+
+.input_box>input,
+textarea {
+    border: 2px solid var(--secound-bg-color) !important;
+    color: var(--text-color) !important;
+}
+
+::placeholder {
+    color: var(--text-color) !important;
+    opacity: 1 !important;
+}
+
+.contact_btn {
+    font-weight: 500 !important;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color) !important;
+    color: var(--secound-text-color);
+    transition: .3s !important;
+    border-radius: 0 40px 40px 60px;
+}
+
+/* ----------------Footer Section -------------------------------- */
+#footer {
+    background-color: var(--bg-color) !important;
+}
+
+.footer_row .col-md-3 h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.none,
+.col-md-3 h4 {
+    pointer-events: none;
+}
+
+.footer_row .col-md-3 p a,
+.footer_row .col-md-3 p {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 15px;
+}
+
+.nav_icons_left {
+    padding-top: 5px;
+}
+
+/* ---------------- media Qurery Min-768px -------------------------------- */
+@media (min-width:768px) {
+    .nav_icons_left {
+        display: none !important;
+    }
+}
+
+/* ---------------- media Qurery Max-768px -------------------------------- */
+@media (max-width:768px) {
+
+    /* ----------------Header Section -------------------------------- */
+    header .logo {
+        font-size: 25px;
+        font-weight: 700 !important;
+    }
+
+    .nav_icons_right {
+        display: none !important;
+    }
+
+    /* ----------------Main Section -------------------------------- */
+    .main_title {
+        font-size: 33px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .main_info {
+        font-size: 14px;
+    }
+
+    /* ----------------About Section -------------------------------- */
+    .row {
+        --bs-gutter-x: none !important;
+    }
+
+    .about_info {
+        font-size: 13px;
+    }
+
+    /* ----------------Product Section -------------------------------- */
+    .col-md-4 {
+        width: 21rem !important;
+    }
+
+    .copy_right {
+        font-size: 14px;
+    }
+}
+
+/* ---------------- media Qurery 425px -------------------------------- */
+@media (max-width:425px) {
+
+    /* ----------------Header Section -------------------------------- */
+    header .logo {
+        font-size: 23px;
+        font-weight: 700 !important;
+    }
+
+    .fa-bars {
+        font-size: 23px !important;
+    }
+
+    .nav_icons_left a {
+        font-size: 20px;
+        margin-right: 5px !important;
+    }
+
+    /* ----------------Main Section -------------------------------- */
+    .main_img {
+        width: 300px !important;
+    }
+
+    .Product_title,
+    .contact_title {
+        font-size: 2px !important;
+
+    }
+
+    .main_btn {
+        padding: 5px 5px !important;
+    }
+
+    /* ----------------About Section -------------------------------- */
+    .about_info {
+        font-size: 14px;
+    }
+
+    /* ----------------Product Section -------------------------------- */
+    .col-md-4 {
+        width: 18rem !important;
+    }
+
+    .buy {
+        font-size: 15px !important;
+    }
+
+    .card-btn {
+        font-size: 15px !important;
+    }
+}
+
+/* ---------------- media Qurery 375px -------------------------------- */
+@media (max-width:375px) {
+
+    /* ----------------Main Section -------------------------------- */
+    .main_title {
+        font-size: 28px;
+
+    }
+
+    .main_info {
+        font-size: 14px;
+    }
+
+    /* ----------------Product Section -------------------------------- */
+    .col-md-4 {
+        width: 16rem !important;
+    }
+}
+
+/* ---------------- media Qurery 320px -------------------------------- */
+@media (max-width:320px) {
+    header .logo {
+        font-size: 20px;
+        font-weight: 700 !important;
+    }
+
+    .fa-bars {
+        font-size: 20px !important;
+    }
+
+    .nav_icons_left a {
+        font-size: 17px;
+        margin-right: 5px !important;
+    }
+
+    .nav_icons_left {
+        padding-top: 3px;
+    }
+}
