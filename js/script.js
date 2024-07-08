@@ -1,10 +1,10 @@
 //preloader -------------------------------------
-// const loader = document.getElementById('preloader');
+const loader = document.getElementById('preloader');
 
-// window.onload = function () {
-//     loader.classList.add('lodaeranimy');
-//     // loader.style.display = 'none';
-// }
+window.onload = function () {
+    loader.classList.add('lodaeranimy');
+    // loader.style.display = 'none';
+}
 
 //preloader -------------------------------------
 
