@@ -35,16 +35,17 @@ html {
     left: 0; */
     display: grid;
     place-items: center;
-    background-color: #21242d;
+    background-color:var(--secound-bg-color);
     z-index: 999 !important;
 }
 .lodaeranimy{
-    animation:preload 1 5s ease-in-out forwards;
-    animation-delay: 1s;
+    animation:preload 1 2s ease-in-out forwards;
+    animation-delay: 2s;
 }
 @keyframes preload{
     100%{
         opacity: 0;
+        visibility: hidden;
     }
 }
 
