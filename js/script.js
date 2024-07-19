@@ -7,7 +7,26 @@ window.onload = function () {
 }
 
 //preloader -------------------------------------
+// top cart botton ---------------------------------
 
+let myCart = document.getElementById('add-to-cart');
+let cartBtn = document.getElementById("cart-btn");
+
+cartBtn.onclick = function () {
+    // alert("it's Working");
+    myCart.classList.toggle('active');
+}
+
+let myCarttwo = document.getElementById('add-to-cart');
+let cartBtntwo = document.getElementById("cart-btntwo");
+
+cartBtntwo.onclick = function () {
+    // alert("it's Working");
+    myCarttwo.classList.toggle('active');
+}
+
+
+// top cart botton ---------------------------------
 
 
 // top sign in botton ---------------------------------
