@@ -9,7 +9,7 @@
 
     --secound-text-color: #0d4930;
 
-    --another-color:#4fa38c;
+    --another-color:#c1f1e5;
 }
 
 
@@ -25,6 +25,14 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secound-bg-color);
+    border-radius: 8px;
 }
 /* ----------------preloader Section -------------------------------- */
 .preloader{
@@ -109,6 +117,81 @@ header .logo {
 
 .navbar-toggler:focus {
     box-shadow: none !important;
+}
+
+/* ------------------cart page------------------------------ */
+.add_to_cart {
+    position: absolute;
+    top: 90px; right: 20px;
+    width: 20rem;
+    max-height: 82vh;
+    border-radius: 15px;
+    background-color: var(--bg-color);
+    padding: 20px;
+    box-shadow: 0 0 2px 0 #000;
+    overflow-y: scroll;
+    display: none;
+}
+
+.add_to_cart  h3{
+    font-weight: 600;
+    color: #000;
+    font-size: 20px;
+}
+
+.items {
+    width: 100%;
+    border-left: 5px solid var(--secound-bg-color);
+    background-color: var(--another-color);
+}
+
+.flower_name>p{
+    margin-bottom: 8px;
+    color: var(--secound-text-color);
+}
+
+.rate_qty .qty button {
+    border: none;
+    background-color: transparent;
+}
+
+.rate_qty .rate p,
+.rate_qty .qty p,
+.subtotal p,
+.shipping p
+ {
+    margin-bottom: 0px;
+    font-size: 15px;
+    color: var(--secound-text-color);
+}
+.subtotal p,
+.shipping p,
+.total_value p
+ {
+    font-size: 14px;
+    color: var(--secound-text-color) ;
+}
+
+.symbol {
+    font-size: 10px;
+    padding: 4px;
+    background-color: rgb(223, 223, 223);
+    color: var(--main-color);
+}
+.checkout > p{
+    color: var(--secound-text-color);
+}
+.checkout_btn{
+    color: var(--text-color) !important;
+    background-color: var(--secound-bg-color) !important;
+    border-radius: 5rem !important;
+    border-top-left-radius: 0 !important;
+    border: 1px solid var(--secound-bg-color) !important;
+}
+
+.checkout_btn:hover{
+    background-color: var(--main-color) !important;
+    border: 1px solid var(--main-color) !important;
 }
 /* ------------------sign in page---------------- */
 .login_form{
