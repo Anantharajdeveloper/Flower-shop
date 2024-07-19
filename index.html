@@ -38,7 +38,7 @@
                 </div>
                 <div class="d-flex">
                     <div class="nav_icons_left">
-                        <div href="#" class="fas fa-shopping-cart me-3"></div>
+                        <div href="#" class="fas fa-shopping-cart me-3" id="cart-btntwo" ></div>
                         <div href="#" class="fas fa-user me-2" id="login-btntwo"></div>
                     </div>
 
@@ -67,11 +67,106 @@
                 </div>
 
                 <div class="nav_icons_right me-2">
-                    <div href="#" class="fas fa-shopping-cart me-3"></div>
+                    <div href="#" class="fas fa-shopping-cart me-3" id="cart-btn"></div>
                     <div href="#" class="fas fa-user " id="login-btn"></div>
                 </div>
 
             </div>
+                            <!-- ----------------------- Add to card ----------------------------- -->
+    <div id="add-to-cart" class="add_to_cart px-3 py-3 rounded-4">
+        <h3 class="ms-1">My Cart</h3>
+        <div class="order_items ">
+
+            <div class="items p-1 d-flex  my-2">
+                <img src="images/multi rose bouquet.png" alt="Bouquet" width="50px" class="img-fluid my-1 mx-2">
+                <div class="d-flex flex-column w-100">
+                    <div class="flower_name">
+                        <p> Mixed Roses</p>
+                    </div>
+                    <div class="rate_qty d-flex justify-content-between">
+                        <div class="rate me-2">
+                            <p>&#8377;3000</p>
+                        </div>
+                        <div class="qty d-flex">
+                            <button type="button" class="less ">
+                                <i class="fa-solid fa-minus symbol rounded"></i>
+                            </button>
+                            <p class="px-1">2</p>
+                            <button type="button" class="add">
+                                <i class="fa-solid fa-plus symbol rounded"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items p-1 d-flex  my-2">
+                <img src="images/red rose bouquet.png" alt="Bouquet" width="50px" class="img-fluid my-1 mx-2">
+                <div class="d-flex flex-column w-100">
+                    <div class="flower_name">
+                        <p> Red Roses</p>
+                    </div>
+                    <div class="rate_qty d-flex justify-content-between">
+                        <div class="rate me-2">
+                            <p>&#8377;1500</p>
+                        </div>
+                        <div class="qty d-flex ">
+                            <button type="button" class="less ">
+                                <i class="fa-solid fa-minus symbol rounded"></i>
+                            </button>
+                            <p class="px-1">1</p>
+                            <button type="button" class="add">
+                                <i class="fa-solid fa-plus symbol rounded"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items p-1 d-flex my-2">
+                <img src="images/pink rose bouquet.png " alt="Bouquet" width="50px" class="img-fluid my-1 mx-2">
+                <div class="d-flex flex-column w-100">
+                    <div class="flower_name">
+                        <p> Pink Roses</p>
+                    </div>
+                    <div class="rate_qty d-flex justify-content-between">
+                        <div class="rate me-2">
+                            <p>&#8377;800</p>
+                        </div>
+                        <div class="qty d-flex ">
+                            <button type="button" class="less ">
+                                <i class="fa-solid fa-minus symbol rounded"></i>
+                            </button>
+                            <p class="px-1">2</p>
+                            <button type="button" class="add">
+                                <i class="fa-solid fa-plus symbol rounded"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="checkout mt-5">
+            <p>Order info</p>
+            <div class="total">
+                <div class="subtotal d-flex justify-content-between">
+                    <p>Sub total</p>
+                    <p>&#8377;300</p>
+                </div>
+                <div class="shipping d-flex justify-content-between">
+                    <p>Shipping Cost</p>
+                    <p>&#8377;30</p>
+                </div>
+                <div class="total_value d-flex w-100 justify-content-between">
+                    <p>Total</p>
+                    <p >&#8377;330</p>
+                </div>
+                <button type="button" class="w-100 p-2 checkout_btn">Checkout</button>
+            </div>
+        </div>
+    </div>
             <form action="" class="login_form">
                 <h3>sign in</h3>
                 <input type="email" name="" placeholder="enter your email" class="box" required>
